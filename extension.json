@@ -1,0 +1,23 @@
+{
+	"name": "Force Watchers",
+	"version": "1.0.1",
+	"author": "jamesg5",
+	"url": "https://github.com/jamesg5/ForceWatchers",
+	"descriptionmsg": "forcewatchers-desc",
+	"type": "parserhook",
+	"ExtensionMessagesFiles": {
+		"ForceWatchersMagic": "Magic.php"
+	},
+	"AutoloadClasses": {
+		"ForceWatchers": "ForceWatchersMain.php"
+	},
+	"config": {
+		"ForceWatchersShowOutput": false
+	},
+	"Hooks": {
+		"ParserFirstCallInit": [
+			"ForceWatchers::onParserSetup"
+		]
+	},
+	"manifest_version": 1
+}
